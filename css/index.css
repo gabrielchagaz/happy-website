@@ -1,9 +1,16 @@
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #2F97C1;
-    border-bottom: 10px solid #000000;
-    padding: 10px 20px;
+    align-items: center;
+    background-color: #00b894;
+    border-bottom: 10px solid #2d3436;
+    padding: 20px 50px
+}
+
+#logo {
+    display: inline-flex;
+    height: 62px;
+    width: 86px;
 }
 
 nav {
@@ -23,7 +30,7 @@ a {
 
 a::before {
     content: "";
-    background-color: #4E4187;
+    background-color: #0984e3;
     height: 10px;
     width: 10px;
     margin-right: 10px;
@@ -31,8 +38,18 @@ a::before {
 
 .button {
     display: inline-block;
-    background-color: #4E4187;
+    background-color: #0984e3;
     padding: 18px 20px;
-    box-shadow: 5px 5px 0px #000000;
+    box-shadow: 5px 5px 0px #2d3436;
     margin: 0px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.02);
+    background-color: #2541B2;
+}
+
+.button:active {
+    background-color: #03256C;
 }
